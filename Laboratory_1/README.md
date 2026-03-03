@@ -1,4 +1,4 @@
-# Laboratory 1
+# Laboratory 2
 
 Students read individually, highlight the most important sentences and claims in the paper
 Students cooperate in the same group to share what they have highlighted.
