@@ -35,9 +35,9 @@ kaijiefan@thinkdeeply:~$ scp -i kaijie.fan@baldo.disi.unitn.it :~/result.txt ./l
 Run "hostname" on the compute node edu01
 
 ```
-[kaijie.fan@baldo ~]$ srun --nodes=1 --ntasks=1 --cpus-per-task=1 --gres=gpu:0 --partition=short --account=gpu.computing26 --pty bash 
+[kaijie.fan@baldo ~]$ srun --nodes=1 --ntasks=1 --cpus-per-task=1 --gres=gpu:0 --partition=edu-short --account=gpu.computing26 --pty bash 
 [kaijie.fan@gpu00 ~]$ hostname
-gpu00
+edu01
 [kaijie.fan@gpu00 ~]$ exit
 exit
 [kaijie.fan@baldo ~]$
@@ -54,7 +54,7 @@ kaijiefan@thinkdeeply:~$ ssh kaijie.fan@baldo.disi.unitn.it
 […]
 [kaijie.fan@baldo ~]$ vi helloworld.c
 [kaijie.fan@baldo ~]$ gcc helloworld.c -o helloworld
-[kaijie.fan@baldo ~]$ srun --nodes=1 --ntasks=1 --cpus-per-task=1 --gres=gpu:0 --partition=short --account=gpu.computing26 --pty bash 
+[kaijie.fan@baldo ~]$ srun --nodes=1 --ntasks=1 --cpus-per-task=1 --gres=gpu:0 --partition=edu-short --account=gpu.computing26 --pty bash 
 [kaijie.fan@gpu00 ~]$ ./helloworld
 Hello world!
 [kaijie.fan@gpu00 ~]$ exit
